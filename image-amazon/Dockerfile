@@ -2,10 +2,8 @@
 FROM amazoncorretto:8u222
 
 # The following is inspired by https://github.com/hseeberger/scala-sbt/blob/master/oracle/Dockerfile
-ENV SCALA_VERSION 2.13.0
+ENV SCALA_VERSION 2.13.1
 ENV SBT_VERSION 1.3.0
-
-# Install sbt
 RUN \
   curl -L -o /root/sbt-${SBT_VERSION}.rpm https://bintray.com/sbt/rpm/download_file?file_path=sbt-${SBT_VERSION}.rpm && \
   yum install -y /root/sbt-${SBT_VERSION}.rpm && \
