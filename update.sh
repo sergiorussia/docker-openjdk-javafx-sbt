@@ -9,3 +9,4 @@ version_scala="$2"
 root="$( cd "$( dirname "$0" )" && pwd )"
 cd "$root/"
 sed -i -e "s|^ENV SBT_VERSION.*|ENV SBT_VERSION $version_sbt|" -e "s|^ENV SCALA_VERSION.*|ENV SCALA_VERSION $version_scala|" image-*/Dockerfile
+git commit -am"sbt $version_sbt, scala $version_scala"
