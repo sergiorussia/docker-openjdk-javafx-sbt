@@ -1,5 +1,5 @@
 # Debian Stretch provides proper openjfx version for Java 8
-FROM openjdk:8u222-jdk-stretch
+FROM openjdk:8-jdk-stretch
 
 # Install OpenJFX as per https://github.com/docker-library/openjdk/issues/158
 RUN apt-get update && apt-get install -y --no-install-recommends openjfx && rm -rf /var/lib/apt/lists/*

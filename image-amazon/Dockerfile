@@ -1,5 +1,5 @@
 # Amazon Corretto 8 provides JavaFX out-of-the-box
-FROM amazoncorretto:8u222
+FROM amazoncorretto:8
 
 # The following is inspired by https://github.com/hseeberger/scala-sbt/blob/master/oracle/Dockerfile
 ENV SBT_VERSION 1.4.1
